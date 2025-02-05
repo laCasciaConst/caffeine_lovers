@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: c28c18935da417542be73aaba3d97951
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8059658666830397498
+    second: MC_Side_Run_Spritesheet_0
+  - first:
+      213: 2730978448342417604
+    second: MC_Side_Run_Spritesheet_1
+  - first:
+      213: -2360217178030914038
+    second: MC_Side_Run_Spritesheet_2
+  - first:
+      213: -8547937602682505702
+    second: MC_Side_Run_Spritesheet_3
+  - first:
+      213: -3043416573881999209
+    second: MC_Side_Run_Spritesheet_4
+  - first:
+      213: 1763513700208942663
+    second: MC_Side_Run_Spritesheet_5
+  - first:
+      213: -2965551366106231619
+    second: MC_Side_Run_Spritesheet_6
+  - first:
+      213: 453584141045833419
+    second: MC_Side_Run_Spritesheet_7
+  - first:
+      213: -374689433109303382
+    second: MC_Side_Run_Spritesheet_8
+  - first:
+      213: 7756515496074912323
+    second: MC_Side_Run_Spritesheet_9
+  - first:
+      213: 8080416165831883664
+    second: MC_Side_Run_Spritesheet_10
+  - first:
+      213: -1436892935064275389
+    second: MC_Side_Run_Spritesheet_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MC_Side_Run_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 63
+        width: 843
+        height: 1008
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3003570bd8a9df60800000000000000
+      internalID: 8059658666830397498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Side_Run_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 83
+        width: 843
+        height: 985
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c082beed6266e520800000000000000
+      internalID: 2730978448342417604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Side_Run_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 59
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0641b64bf2de3fd0800000000000000
+      internalID: -2360217178030914038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Side_Run_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 2293
+        y: 79
+        width: 843
+        height: 986
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a16b7ed0a00af5980800000000000000
+      internalID: -8547937602682505702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Side_Run_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 3406
+        y: 33
+        width: 810
+        height: 1029
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7902a3230cc93c5d0800000000000000
+      internalID: -3043416573881999209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Side_Run_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 4503
+        y: 30
+        width: 793
+        height: 1030
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74e1d79ed52497810800000000000000
+      internalID: 1763513700208942663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Side_Run_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 5568
+        y: 18
+        width: 808
+        height: 1038
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbc4014aebe38d6d0800000000000000
+      internalID: -2965551366106231619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Side_Run_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 6626
+        y: 16
+        width: 830
+        height: 1037
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce99c28f547b4600800000000000000
+      internalID: 453584141045833419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Side_Run_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 7693
+        y: 21
+        width: 843
+        height: 1038
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf6d6e12f5dccaf0800000000000000
+      internalID: -374689433109303382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Side_Run_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 8772
+        y: 36
+        width: 844
+        height: 1030
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 342ab567fbda4ab60800000000000000
+      internalID: 7756515496074912323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Side_Run_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 9857
+        y: 42
+        width: 839
+        height: 1029
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09bbbb1e0b7632070800000000000000
+      internalID: 8080416165831883664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Side_Run_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 2887
+        y: 56
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 346b9311d712f0ce0800000000000000
+      internalID: -1436892935064275389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MC_Side_Run_Spritesheet_0: 8059658666830397498
+      MC_Side_Run_Spritesheet_1: 2730978448342417604
+      MC_Side_Run_Spritesheet_10: 8080416165831883664
+      MC_Side_Run_Spritesheet_11: -1436892935064275389
+      MC_Side_Run_Spritesheet_2: -2360217178030914038
+      MC_Side_Run_Spritesheet_3: -8547937602682505702
+      MC_Side_Run_Spritesheet_4: -3043416573881999209
+      MC_Side_Run_Spritesheet_5: 1763513700208942663
+      MC_Side_Run_Spritesheet_6: -2965551366106231619
+      MC_Side_Run_Spritesheet_7: 453584141045833419
+      MC_Side_Run_Spritesheet_8: -374689433109303382
+      MC_Side_Run_Spritesheet_9: 7756515496074912323
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
