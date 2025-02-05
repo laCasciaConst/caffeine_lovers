@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+// using System.Numerics;
 using UnityEngine;
 
 public class RoomManager : MonoBehaviour
@@ -39,6 +40,11 @@ public class RoomManager : MonoBehaviour
             TryGenerateRoom(new Vector2Int(gridX, gridY + 1));
             TryGenerateRoom(new Vector2Int(gridX, gridY - 1));
         }
+        else if (roomCount < minRooms)
+        {
+            Debug.Log("RoomCount was less than the minimum amount of rooms. Trying again");
+            RegenerateRooms();
+        }
         else if (!generationComplete)
         {
             Debug.Log($"Generation Complete, {roomCount} rooms created");
@@ -48,9 +54,7 @@ public class RoomManager : MonoBehaviour
     private void StartRoomGenerationFromRoom(Vector2Int roomIndex)
     {
         roomQueue.Enqueue(roomIndex);
-        int x = roomIndex.x;
-        int y = roomIndex.y;
-        roomGrid[x, y] = 1;
+        roomGrid[roomIndex.x, roomIndex.y] = 1;
         roomCount++;
         var initialRoom = Instantiate(roomPrefab, GetPositionFromGridIndex(roomIndex), Quaternion.identity);
         initialRoom.name = $"Room-{roomCount}";
@@ -63,6 +67,21 @@ public class RoomManager : MonoBehaviour
         int x = roomIndex.x;
         int y = roomIndex.y;
 
+        if (x >= gridSizeX || y >= gridSizeY || x < 0 || y < 0)
+            return false;
+
+        if (roomCount >= maxRooms)
+            return false;
+
+        if (Random.value < 0.5f && roomIndex != Vector2Int.zero)
+            return false;
+
+        if (CountAdjacentRooms(roomIndex) > 1)
+            return false;
+
+        if (roomGrid[x, y] != 0)
+            return false;
+
         roomQueue.Enqueue(roomIndex);
         roomGrid[x, y] = 1;
         roomCount++;
@@ -72,7 +91,74 @@ public class RoomManager : MonoBehaviour
         newRoom.GetComponent<Room>().RoomIndex = roomIndex;
         roomObjects.Add(newRoom);
 
+        OpenDoors(newRoom, x, y);
+
         return true;
+    }
+
+    private void RegenerateRooms()
+    {
+        roomObjects.ForEach(Destroy);
+        roomObjects.Clear();
+        roomGrid = new int[gridSizeX, gridSizeY];
+        roomQueue.Clear();
+        roomCount = 0;
+        generationComplete = false;
+
+        Vector2Int initialRoomIndex = new Vector2Int(gridSizeX / 2, gridSizeY / 2);
+        StartRoomGenerationFromRoom(initialRoomIndex);
+    }
+
+    void OpenDoors(GameObject room, int x, int y)
+    {
+        Room newRoomScript = room.GetComponent<Room>();
+
+        Room leftRoomScript = GetRoomScriptAt(new Vector2Int(x - 1, y));
+        Room rightRoomScript = GetRoomScriptAt(new Vector2Int(x + 1, y));
+        Room topRoomScript = GetRoomScriptAt(new Vector2Int(x, y + 1));
+        Room bottomRoomScript = GetRoomScriptAt(new Vector2Int(x, y - 1));
+
+        if (x > 0 && roomGrid[x - 1, y] != 0)
+        {
+            newRoomScript.OpenDoor(Vector2Int.left);
+            leftRoomScript.OpenDoor(Vector2Int.right);
+        }
+        if (x < gridSizeX - 1 && roomGrid[x + 1, y] != 0)
+        {
+            newRoomScript.OpenDoor(Vector2Int.right);
+            rightRoomScript.OpenDoor(Vector2Int.left);
+        }
+        if (y > 0 && roomGrid[x, y - 1] != 0)
+        {
+            newRoomScript.OpenDoor(Vector2Int.up);
+            bottomRoomScript.OpenDoor(Vector2Int.down);
+        }
+        if (y < gridSizeY - 1 && roomGrid[x, y + 1] != 0)
+        {
+            newRoomScript.OpenDoor(Vector2Int.down);
+            topRoomScript.OpenDoor(Vector2Int.up);
+        }
+    }
+
+    private Room GetRoomScriptAt(Vector2Int roomIndex)
+    {
+        GameObject roomObject = roomObjects.Find(r => r.GetComponent<Room>().RoomIndex == roomIndex);
+        if (roomObject != null)
+            return roomObject.GetComponent<Room>();
+        return null;
+    }
+
+    private int CountAdjacentRooms(Vector2Int roomIndex)
+    {
+        int x = roomIndex.x;
+        int y = roomIndex.y;
+        int count = 0;
+        if (x > 0 && roomGrid[x - 1, y] != 0) count++;
+        if (x < gridSizeX - 1 && roomGrid[x + 1, y] != 0) count++;
+        if (y > 0 && roomGrid[x, y - 1] != 0) count++;
+        if (y < gridSizeY - 1 && roomGrid[x, y + 1] != 0) count++;
+
+        return count;
     }
 
     private Vector3 GetPositionFromGridIndex(Vector2Int gridIndex)
